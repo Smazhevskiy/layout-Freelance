@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="js/jquery.fancybox.min.js">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,26 +16,48 @@
 <header class="header">
     <div class="header__top">
         <div class="container">
-            <a href="#">+375(33)777 77 77</a>
-            <a href="#">some@gmail.com</a>
-            <a href="#"></a>
+            <div class="header_contacts">
+                <a class="header__phone" href="tel:375331234567">+375 (33) 123 45 67</a>
+                <a class="header__email" href="#">some@gmail.com</a>
+                <a data-fancybox data-src="#modal" href="javascript:;" class="header_btn">Бесплатная консультация</a>
+            </div>
         </div>
     </div>
     <div class="header__content">
-        <div class="header__logo">
-            <a href="#">
-                <img src="img/logo.png" alt="">
-            </a>
+        <div class="container">
+            <div class="header__content-inner">
+                <div class="header__logo">
+                    <a href="#">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Услуги</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </nav>
     </div>
 </header>
 </body>
+
+
+
+
+<div id="modal">
+    <form>
+        <input type="text" placeholder="Ваше имя">
+        <input type="text" placeholder="Вашь телефон">
+        <input type="submit" value="Отправить">
+    </form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/main.js"></script>
+
 </html>
